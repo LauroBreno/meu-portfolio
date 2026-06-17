@@ -1,9 +1,8 @@
-// src/supabase.js
 import { createClient } from '@supabase/supabase-js'
 
-// Substitua pelas chaves reais do seu novo projeto no Supabase
-const supabaseUrl = 'https://uzlcxvvismlarkavtsrd.supabase.co'
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6bGN4dnZpc21sYXJrYXZ0c3JkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2MTM0NDIsImV4cCI6MjA5NzE4OTQ0Mn0.O7WOK0TQSO6iNIiVXuD5C1rMNNH1J5Chs_xcCQ2ew0c'
+// O Vite usa a sintaxe import.meta.env para ler o arquivo .env
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {

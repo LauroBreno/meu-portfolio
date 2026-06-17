@@ -31,11 +31,11 @@ Para rodar este projeto em sua máquina, você precisará do [Node.js](https://n
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/LauroBreno/portfolio-vue-supabase.git](https://github.com/LauroBreno/portfolio-vue-supabase.git)
+git clone [https://github.com/LauroBreno/meu-portfolio.git](https://github.com/LauroBreno/meu-portfolio.git)
 ```
 
 **2. Acesse a pasta do projeto:**
-cd portfolio-vue-supabase
+cd meu-portfolio
 
 **3. Instale as dependências:**
 npm install
@@ -46,7 +46,6 @@ Vá no arquivo supabase.js e configure suas credenciais de projeto geradas no pa
 **5. Execute o servidor de desenvolvimento:**
 npm run dev
 
-
-   **Autor**
+## Autor
 Criado por Lauro Breno
 Da Engenharia Química para o Desenvolvimento de Software.
