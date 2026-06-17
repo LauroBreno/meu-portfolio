@@ -2,7 +2,6 @@
 
 > Uma plataforma de portfólio pessoal interativa, equipada com um painel administrativo (CMS) blindado para gerenciamento de projetos. A aplicação consome a API do GitHub em tempo real e utiliza o Supabase para controle de estado, categorias e autenticação.
 
-![Status](https://img.shields.io/badge/Status-Em%20Produção-emerald)
 ![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=flat&logo=vue.js&logoColor=4FC08D)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
@@ -47,6 +46,7 @@ Vá no arquivo supabase.js e configure suas credenciais de projeto geradas no pa
 **5. Execute o servidor de desenvolvimento:**
 npm run dev
 
-**Autor**
+
+   **Autor**
 Criado por Lauro Breno
 Da Engenharia Química para o Desenvolvimento de Software.
