@@ -359,7 +359,12 @@ const loadPortfolioData = async () => {
 
     // 3. Monta as ÚLTIMAS ATIVIDADES do Footer
     recentActivities.value = githubRepos.slice(0, 3).map(repo => {
-      const isFinished = repo.topics && repo.topics.includes('finalizado');
+      // Cruzamento com o banco para descobrir o status
+      const dbProject = dbData && dbData.find(p => p.github_id === repo.id);
+      
+      // Se estiver no banco e marcado como finalizado, recebe true. Senão, false (Em andamento).
+      const isFinished = dbProject ? dbProject.status === 'finalizado' : false;
+      
       return {
         id: repo.id,
         name: repo.name.replace(/-/g, ' '),
